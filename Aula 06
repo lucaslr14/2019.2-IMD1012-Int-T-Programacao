@@ -1,0 +1,117 @@
+/AULA 06------------------------------------------------------------------------
+/AULA 06/Exercício01
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{	
+	//Variáveis
+	float nota1;
+	float nota2;
+	//Impressão
+	printf("---------------------------\n");
+	printf("-------- Média Final ------\n");
+	printf("---------------------------\n");
+	printf("Nota 1: ");
+	scanf("%f", &nota1);
+	printf("Nota 2: ");
+	scanf("%f", &nota2);
+	//Cálculo
+	float media = (nota1 + nota2) / 2;
+	//Impressão final
+	printf("---------------------------\n");
+	printf("Média: %f\n", media);
+	return 0;
+}
+
+/AULA 06------------------------------------------------------------------------
+/AULA 06/Exercício02
+
+#include <stdio.h>
+
+int main(){
+	//cabeçalho
+	printf("----------------------------------\n");
+	printf("-- Consumo Médio de Combustível --\n");
+	printf("----------------------------------\n");
+
+	float km;
+
+	printf("Quantos quilômetros rodados? ");
+	scanf("%f", &km);
+
+	float litros;
+
+	printf("Quantos litros de combustível? ");
+	scanf("%f", &litros);
+
+	float cons = km / litros;
+
+	printf("Consumo médio de %.2f Km/l.\n", cons);
+	printf("----------------------------------\n");
+	return 0;
+}
+
+/AULA 06------------------------------------------------------------------------
+/AULA 06/Exercício03
+
+#include <stdio.h>
+
+int main(){
+	printf("--------------------------------\n");
+	printf("-- Fahrenheit -> Celcius conv --\n");
+	printf("--------------------------------\n");
+
+	float fahr;
+
+	printf("Quantos graus Fahrenheit? ");
+	scanf("%f", &fahr);
+
+	float celc = (fahr-32.0)*(5.0/9.0);
+	printf("Igual a %.1fºC.\n", celc);
+
+	return 0;
+}
+
+/AULA 06------------------------------------------------------------------------
+/AULA 06/Ecodigo2-090819
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{	
+	//comentário simples
+	
+	/* comentário
+	de 
+	bloco*/
+	//char
+	char letra1 = 'a';
+	char letra2 = 'b', letra3 = 'c', letra4 = 'd';
+	char somachar = letra1 + letra3;
+	//int
+	int valorint1 = 1;
+	int valorint2 = 2, valorint3 = 3, valorint4 = 4;
+	int somaint = valorint1 + valorint4;
+	//short int
+	short int valorshint1 = 2613;
+	short int valorshint2 = 321, valorshint3 = 6588, valorshint4 = 30545;
+	//long int
+	long int valorlongint1 = -451358435425;
+	long int valorlongint2 = 5315315, valorlongint3 = -657853453453, valorlongint4 = 42315313504304;
+	//unsigned int
+	unsigned int valorunint1 = 32123;
+	unsigned int valorunint2 = 452341, valorunint3 = 654156, valorunint4 = 8641813;
+	//float
+	float valorfloat1 = 1.16514315;
+	float valorfloat2 = 153.256, valorfloat3 = 45244.65, valorfloat4 = 5464.12646;
+	//double
+	double valordoub1 = 354132498;
+	double valordoub2 = 5644531453131455341, valordoub3 = 456458486553998, valordoub4 = 8768979795436431;
+
+
+	printf("Hello world\n");
+	printf("char: %c int: %i\n", letra1, valorint1);
+
+	return 0;
+}
