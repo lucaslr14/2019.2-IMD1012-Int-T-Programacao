@@ -1,0 +1,96 @@
+AULA 08-----------------------------------------------------------------------------------
+AULA 08/Exercício01
+
+#include <stdio.h>
+
+int main() {
+	float a, b, soma;						        //VARIÁVEIS
+
+	printf("Digite o valor \"a\": ");		//ENTRADAS
+	scanf("%f", &a);
+	printf("Digite o valor \"b\": ");
+	scanf("%f", &b);
+
+	soma = a + b;							          //CÁLCULO
+
+	printf("a + b = %.3f\n", soma);			//IMPRESSÃO
+
+	return 0;
+}
+
+AULA 08-----------------------------------------------------------------------------------
+AULA 08/Exercício02
+
+#include <stdio.h>
+
+int main() {
+	float a, b, c, mult, div;			    	//VARIÁVEIS
+
+	printf("Digite o valor \"a\": ");		//ENTRADAS
+	scanf("%f", &a);
+	printf("Digite o valor \"b\": ");
+	scanf("%f", &b);
+	printf("Digite o valor \"c\": ");
+	scanf("%f", &c);
+	
+	mult = a * c;						          	//CÁLCULOS
+	div = b / a;
+
+	printf("a * c = %.3f\n", mult);			//IMPRESSÃO
+	printf("b / a = %.3f\n", div);
+
+	return 0;
+}
+
+
+AULA 08-----------------------------------------------------------------------------------
+AULA 08/Teste1
+
+
+#include <stdio.h>
+
+int main() {
+	int x = 10;
+	int y = 4;
+	int z = 11;
+	float i = 10;
+	float j = 4;
+	float k = i / j;
+	int esp = 11;
+
+	printf("Asodhsaoid\t");
+	printf("32132132\t");
+	printf("asdasdsd000\n");
+	printf("231312\t\t");
+	printf("231312\t\t");
+	printf("%*i\n", z, x);
+	printf("231312\t\t");
+	printf("231312\t\t");
+	printf("%0*.4f\n", esp, k);
+
+	return 0;
+}
+
+AULA 08-----------------------------------------------------------------------------------
+AULA 08/Teste2
+
+#include <stdio.h>
+char x = 'X';
+
+int main() {
+	printf("%*c\n", 10, x);
+	printf("%*cXX\n", 9, x);
+	printf("%*cXXXX\n", 8, x);
+	printf("%*cXXXXXX\n", 7, x);
+	printf("%*cXXXXXXXX\n", 6, x);
+	printf("%*cXXXXXXXXXX\n", 5, x);
+	printf("%*cXXXXXXXXXXXX\n", 4, x);
+	printf("%*cXXXXXXXXXXXXXX\n", 3, x);
+	printf("%*cXXXXXXXXXXXXXXXX\n", 2, x);
+	printf("%*cXXXXXXXXXXXXXXXXXX\n", 1, x);
+	printf("%*c\n", 10, x);
+	printf("%*c\n", 10, x);
+	printf("%*cXX\n", 9, x);
+
+	return 0;
+}
