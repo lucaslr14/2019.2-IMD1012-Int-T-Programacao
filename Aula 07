@@ -1,0 +1,126 @@
+AULA 07---------------------------------------------------------------------------------
+AULA 07/Treino1
+
+#include <stdio.h>
+
+int main() {
+	int num1, num2;																  //Variáveis.
+	printf("Digite o 1º valor: ");									//Entrada daqui...
+	scanf("%i", &num1);
+	printf("Digite o 2º valor: ");
+	scanf("%i", &num2);															//... até aqui.
+	if (num1 > num2) {															//Saída daqui...
+		printf("O 1º valor [%i] é maior que o 2º valor [%i].\n", num1, num2);
+	}
+	if (num2 > num1) {
+		printf("O 2º valor [%i] é maior que o 1º valor [%i].\n", num2, num1);	//... até aqui.
+	}
+	return 0;
+}
+
+AULA 07---------------------------------------------------------------------------------
+AULA 07/Treino2-0
+
+#include <stdio.h>
+
+int main() {
+	int x;											                      //VARIÁVEL
+	printf("|-------- Teste Par-Ímpar ---------\n");  
+	printf("| Digite o valor teste: ");               //ENTRADA
+	scanf("%i", &x);
+	if (x % 2 == 0) {							                    //TESTE E IMPRESSÃO
+		printf("| O valor %i é par.\n", x);
+	}
+	else {
+		printf("| O valor %i é ímpar.\n", x);
+	}
+	printf("|----------------------------------\n");
+	return 0;
+}
+
+AULA 07---------------------------------------------------------------------------------
+AULA 07/Treino3
+
+#include <stdio.h>
+
+int main() {
+	int x;											//VARIÁVEL
+	printf("|-------- Teste Par-Ímpar ---------\n");  //ENTRADA
+	printf("| Digite o valor teste: ");
+	scanf("%i", &x);
+	x % 2 == 0 ? printf("| O valor %i é par.\n", x) : printf("| O valor %i é ímpar.\n", x);
+	printf("|----------------------------------\n");
+	return 0;
+}
+
+AULA 07---------------------------------------------------------------------------------
+AULA 07/Treino2-1
+
+#include <stdio.h>
+
+int main() {
+	int x;
+	printf("Digite um valor no intervalo [0,10] para ser impresso por extenso: ");
+	scanf("%i", &x);
+	switch (x) {
+		case 0:
+			printf("Zero.\n");
+			break;
+		case 1:
+			printf("Um.\n");
+			break;
+		case 2:
+			printf("Dois.\n");
+			break;
+		case 3:
+			printf("Três.\n");
+			break;
+		case 4:
+			printf("Quatro.\n");
+			break;
+		case 5:
+			printf("Cinco.\n");
+			break;
+		case 6:
+			printf("Seis.\n");
+			break;
+		case 7:
+			printf("Sete.\n");
+			break;
+		case 8:
+			printf("Oito.\n");
+			break;
+		case 9:
+			printf("Nove.\n");
+			break;
+		case 10:
+			printf("Dez.\n");
+			break;
+
+	}
+	return 0;
+}
+
+AULA 07---------------------------------------------------------------------------------
+AULA 07/teste
+
+#include <stdio.h>
+
+int main() {
+	float a, b, som, sub, mul, div;					//VARIÁVEIS
+	char operacao;
+
+	printf("|--------------------------\n");
+	
+	printf("| Valor 'A': ");						//ENTRADAS
+	scanf("%f", &a);
+
+	printf("| Operação: ");
+	scanf("'%c'", &operacao);
+	
+	printf("| Valor 'B': ");
+	scanf("%f", &b);
+
+	printf("%f %c %f\n", a, operacao, b);
+	return 0;
+}
